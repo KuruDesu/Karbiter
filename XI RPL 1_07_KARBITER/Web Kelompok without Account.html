@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web KLPK</title>
+    <link rel="stylesheet" type="text/css" href="src.css"/>
+    <link rel="stylesheet" type="text/css" href="login register form.css"/>
+</head>
+<body class="body2">
+    <header>
+        <h1>KARBITER</h1>
+        <div class="buttonheader"><button>Home</button></div>
+        <div class="buttonheader"><button>Profile</button></div>
+        <div class="buttonheader">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        </div>
+        <div class="buttonheader">
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>
+        </div>
+    </header>
+
+    <div class="h1hi">
+        <h1>Hi, Welcome to Karbiter</h1>
+        <p>This is the website of Karbiter Group</p>
+        <p>You must log in if you want to view the contents of the website</p>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="D:\Coding\Karbiter\XI RPL 1_07_KARBITER\Web Kelompok.html">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <br>
+            </div>
+            <h1>Login</h1>
+            <div class="container">
+                <label class="textputih" for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label class="textputih" for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label> <input type="checkbox" checked="checked" name="remember"> <span class="textputih"> Remember me </span> <span class="forgotpass"><span class="textputih">Forgot</span> <a href="#" class="linktext">password?</a></label>
+                <button class="btnalign btnalign2" type="submit">Login</button>
+                <br>
+                <label>
+                    <span><b>Haven't have an account? <a href="#" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'" class="linktext">Register</a></b></span>
+                </label>
+                <br>
+            </div>
+           
+        </form>
+
+    </div>
+
+    <!-- Register Modal -->
+    <div id="id02" class="modal">
+        <form class="modal-content animate" action="D:\Coding\Karbiter\XI RPL 1_07_KARBITER\Web Kelompok.html">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <br>
+            </div>
+            <h1>Register</h1>
+            <div class="container">
+                <label class="textputih" for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label class="textputih" for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+                <label class="textputih" for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label class="textputih" for="cpsw"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Enter Password Again" name="cpsw" required>
+                <label><br></label>
+                <button class="btnalign btnalign2" type="submit">Register</button>
+                <br>
+                <label class="textputih">
+                    <span class="alignright"><b>Already have an account? <a href="#" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display='none'" class="linktext">Login</a></b></span>
+                </label>
+            </div>
+        </form>
+    </div>
+
+<script src="Modul Outside.js"></script>
+
+</body>
+</html>
